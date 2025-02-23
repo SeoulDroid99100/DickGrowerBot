@@ -10,4 +10,4 @@ pub async fn run_webserver() {
     println!("🚀 Web server running on http://{}", addr);
 
     axum::Server::from_tcp(listener).unwrap().serve(app.into_make_service()).await.unwrap();
-}￼Enter
+}
